@@ -17,5 +17,11 @@ const Categories = db.define('raul_categories', {
         allowNull: true,
     }
 })
+//Criar tabelas com sequelize 
+// Categories.sync();
+//Excluir a tabelas fazer novamente 
+// Categories.sync({force: true});
+//Verificar se há alguma diferença na tabela, e fazer alteracao nelas
+// Categories.sync({alter: true});
 
 module.exports = Categories;
