@@ -22,7 +22,7 @@ module.exports = function sendMail(to,cc,subject,html){
 
     smtpTransport.sendMail(message, (err,res) => {
         if (err) {
-            console.log(`Erro ao enviar o email: ${err}`);
+            console.log(`Erro ao enviar o email!: ${err}`);
         } else {
             console.log('Email enviado com sucesso!')
         }
